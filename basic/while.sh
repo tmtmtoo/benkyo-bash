@@ -3,7 +3,7 @@
 set -x
 
 TIMEOUT_SEC=$1
-: ${MAX:=5}
+: ${TIMEOUT_SEC:=5}
 
 COMMAND=$2
 : ${COMMAND:='echo enter the command.'}

@@ -34,4 +34,3 @@ for i in ${LIST[*]}; do
 done
 
 echo ${LIST[*]}
-

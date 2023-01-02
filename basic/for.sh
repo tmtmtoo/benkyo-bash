@@ -27,4 +27,3 @@ show your arguments for this script...
 for arg in $@; do
 	echo "$arg"
 done
-

@@ -25,4 +25,3 @@ function concat2() {
 
 RET=$(concat2 aaa bbb)
 echo "$RET"
-

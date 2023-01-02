@@ -7,5 +7,3 @@ function hello() {
 function ret() {
 	return $1
 }
-
-

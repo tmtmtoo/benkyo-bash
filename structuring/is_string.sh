@@ -9,9 +9,9 @@ cd $(dirname $0)
 
 while getopts v:r: opt; do
 	case $opt in
-		v ) VALUE="$OPTARG";;
-		r ) REGEX="$OPTARG";;
-		\? ) exit 1;;	
+	v) VALUE="$OPTARG" ;;
+	r) REGEX="$OPTARG" ;;
+	\?) exit 1 ;;
 	esac
 done
 
@@ -25,4 +25,3 @@ if ! is_null $REGEX; then
 	[[ $VALUE =~ $REGEX ]] ||
 		(./error_log.sh 'unmatch regular expression.' $0 && exit 1)
 fi
-

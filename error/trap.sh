@@ -18,4 +18,3 @@ trap 'catch "$@"' ERR
 trap 'finally "$@"' EXIT
 
 eval $1
-

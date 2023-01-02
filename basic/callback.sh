@@ -9,4 +9,3 @@ function execute() {
 }
 
 execute "echo"
-

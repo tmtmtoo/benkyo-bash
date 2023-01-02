@@ -13,7 +13,6 @@ even if not explicitly specify the timeout."
 ./main.sh './ping_once.stub.sh 0'
 [ $? -eq 0 ] && echo ok || (echo ng && exit 1)
 
-
 echo "
 when the script always fails, exit code is not 0."
 
@@ -32,4 +31,3 @@ exit code is not 0 if no options are specified."
 
 ./main.sh
 [ $? -ne 0 ] && echo ok || (echo ng && exit 1)
-

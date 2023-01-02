@@ -13,4 +13,3 @@
 # echo $CapitalCities[*]
 
 # bash のバージョンが古くてダメだった...
-

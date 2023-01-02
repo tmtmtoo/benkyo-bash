@@ -18,4 +18,3 @@ curry @fn1 echo
 
 curry @fn2 "expr 100 +"
 @fn2 10
-

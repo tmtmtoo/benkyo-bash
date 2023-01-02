@@ -10,15 +10,15 @@ cd $(dirname $0)
 
 while getopts v:l:u: opt; do
 	case $opt in
-		v ) VALUE="$OPTARG";;
-		l ) LOWER="$OPTARG";;
-		u ) UPPER="$OPTARG";;
-		\? ) exit 1;;
+	v) VALUE="$OPTARG" ;;
+	l) LOWER="$OPTARG" ;;
+	u) UPPER="$OPTARG" ;;
+	\?) exit 1 ;;
 	esac
 done
 
 function validate() {
-	expr "$1" + 1 > /dev/null 2>&1 && return 0 || return 1
+	expr "$1" + 1 >/dev/null 2>&1 && return 0 || return 1
 }
 
 function is_null() {
@@ -35,4 +35,3 @@ elif ! is_null $UPPER; then
 	validate $UPPER || (./error_log.sh '-u UPPER must be integer.' $0 && exit 1)
 	[ $VALUE -lt $UPPER ] || (./error_log.sh 'VALUE is grater than UPPER.' $0 && exit 1)
 fi
-

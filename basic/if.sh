@@ -27,4 +27,3 @@ elif [ $INTEGER -lt 3 ]; then
 else
 	echo "$INTEGER"
 fi
-

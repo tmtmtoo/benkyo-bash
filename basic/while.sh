@@ -20,4 +20,3 @@ while ! eval $COMMAND; do
 done
 
 echo 'done'
-

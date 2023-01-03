@@ -4,9 +4,10 @@ WORKDIR /src
 
 RUN wget https://github.com/shellspec/shellspec/archive/0.28.1.tar.gz \
 	&& tar xzvf ./0.28.1.tar.gz \
-	&& ln -s ./shellspec-0.28.1/shellspec ./
+	&& mkdir /usr/local/shellspec \
+ 	&& mv shellspec-0.28.1/* /usr/local/shellspec
 
-COPY . /src/
+ENV PATH $PATH:/usr/local/shellspec
 
-CMD ["./shellspec"]
+CMD ["shellspec"]
 

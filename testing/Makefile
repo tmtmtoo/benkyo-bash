@@ -1,6 +1,8 @@
-.PHONY: test
+.PHONY: prepare test
+
+prepare:
+	docker image build -t shellspec:latest .
 
 test:
-	docker image build -t shellspec:latest .
-	docker container run --rm shellspec:latest
+	docker container run --volume $(shell pwd):/src --rm shellspec:latest
 

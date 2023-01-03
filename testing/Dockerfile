@@ -10,4 +10,3 @@ RUN wget https://github.com/shellspec/shellspec/archive/0.28.1.tar.gz \
 ENV PATH $PATH:/usr/local/shellspec
 
 CMD ["shellspec"]
-

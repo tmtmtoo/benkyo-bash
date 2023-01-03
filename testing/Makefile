@@ -5,4 +5,3 @@ prepare:
 
 test:
 	docker container run --volume $(shell pwd):/src --rm shellspec:latest
-

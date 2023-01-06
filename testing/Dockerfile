@@ -2,6 +2,8 @@ FROM alpine:3.17
 
 WORKDIR /src
 
+RUN apk add bash
+
 RUN wget https://github.com/shellspec/shellspec/archive/0.28.1.tar.gz \
 	&& tar xzvf ./0.28.1.tar.gz \
 	&& mkdir /usr/local/shellspec \

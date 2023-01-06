@@ -1,4 +1,9 @@
 Describe 'test: effect.sh'
+	cleanup() {
+		rm -rf ./foo ./bar ./baz
+	}
+	AfterAll 'cleanup'
+
 
 	It 'Create a directory with -d option'
 		When run ./effect.sh -d foo

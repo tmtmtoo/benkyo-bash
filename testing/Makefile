@@ -1,4 +1,4 @@
-.PHONY: prepare test
+.PHONY: image test
 
 image:
 	docker image build -t shellspec:latest .
